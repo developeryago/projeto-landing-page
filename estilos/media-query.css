@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 41rem ){
+     header nav{
+        display: block;
+    }
+
+    #cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card:nth-child(2n){
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    header div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header img,
+    header nav,
+    header a.button{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 72rem) {
+    h1, h2{
+        font-size: 4rem;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 72rem;
+    }
+
+    .container.row-reverse{
+        flex-direction: row-reverse;
+    }
+
+    #about{
+        flex: 2;
+    }
+    footer nav{
+        flex: 1;
+    }
+    form{
+        flex: 3;
+    }
+
+    #about p{
+        font-size: 1.25rem;
+        max-width: 24rem;
+    }
+    form label{
+        font-size: 1.5rem;
+    }
+}
